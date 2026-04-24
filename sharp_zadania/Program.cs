@@ -1,5 +1,6 @@
 ﻿using sharp_zadania.dziedziczenie;
 
+/////////////////////////////////// 22222222222222222222222222
 Osoba osoba = new Osoba("marek",  "kowalski", "75675674676");
 Student student = new Student("ivan",  "ivanov", "3457698976856", "8767843");
 Pracownik pracownik = new Pracownik("hans",  "schneider", "79098566865", "bomj");
@@ -18,3 +19,9 @@ Console.WriteLine($"Pracownik: {pracownik.Imie}");
 Console.WriteLine($"Pracownik: {pracownik.Nazwisko}");
 Console.WriteLine($"Pracownik: {pracownik.Pesel}");
 Console.WriteLine($"Pracownik: {pracownik.Praca}\n");
+
+
+
+/////////////////////////////////// 444444444444444444444444
+Produkt produkt = new Produkt("abs", 0.0);
+ProduktSpozywczy produktSpozywczy = new ProduktSpozywczy("mleko", 14.99, "24.04.26");

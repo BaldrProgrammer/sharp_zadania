@@ -3,11 +3,22 @@
 public class Produkt
 {
     private string _nazwa;
-    private float _cena;
+    private double _cena;
     
-    public Produkt(string nazwa, float cena)
+    public Produkt(string nazwa, double cena)
     {
         _nazwa = nazwa;
         _cena = cena;
+    }
+}
+
+
+public class ProduktSpozywczy : Produkt
+{
+    private string _dataWaznosci;
+    public ProduktSpozywczy(string nazwa, double cena, string dataWaznosci)
+        :  base(nazwa, cena)
+    {
+        _dataWaznosci = dataWaznosci;
     }
 }
