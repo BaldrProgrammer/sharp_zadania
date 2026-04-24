@@ -3,8 +3,25 @@
 public class Osoba
 {
     private string _imie;
+    public string Imie
+    {
+        get => _imie;
+        set => _imie = value;
+    }
+    
     private string _nazwisko;
+    public string Nazwisko
+    {
+        get => _nazwisko;
+        set => _nazwisko = value;
+    }
+    
     private string _pesel;
+    public string Pesel
+    {
+        get => _pesel;
+        set => _pesel = value;
+    }
 
     public Osoba(string imie, string nazwisko, string pesel)
     {
