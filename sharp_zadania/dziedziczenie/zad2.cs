@@ -6,21 +6,18 @@ public class Osoba
     public string Imie
     {
         get => _imie;
-        set => _imie = value;
     }
     
     private string _nazwisko;
     public string Nazwisko
     {
         get => _nazwisko;
-        set => _nazwisko = value;
     }
     
     private string _pesel;
     public string Pesel
     {
         get => _pesel;
-        set => _pesel = value;
     }
 
     public Osoba(string imie, string nazwisko, string pesel)
@@ -37,7 +34,6 @@ public class Student : Osoba
     public string NrIndeksu
     {
         get => _nrIndeksu;
-        set => _nrIndeksu = value;
     }
     
     public Student(string imie, string nazwisko, string pesel, string nrIndeksu)
