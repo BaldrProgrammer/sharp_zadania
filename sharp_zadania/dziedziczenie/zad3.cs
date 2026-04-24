@@ -8,6 +8,7 @@ public interface IPrintable
 public class Dokument : IPrintable
 {
     private string _tytul;
+    
     public Dokument(string tytul)
     {
         _tytul = tytul;

@@ -49,7 +49,6 @@ public class Pracownik : Osoba
     public string Praca
     {
         get => _praca;
-        set => _praca = value;
     }
     
     public Pracownik(string imie, string nazwisko, string pesel, string praca)
