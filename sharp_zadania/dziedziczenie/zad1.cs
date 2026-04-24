@@ -4,12 +4,12 @@ public class Figura
 {
     private Figura[] _tablicaWskaznikow = new Figura[]
     {
-        new Kolo(), 
-        new Trojkat(), 
-        new Prostokat(),
+        new Kolo(1), 
+        new Trojkat(1, 1), 
+        new Prostokat(1, 1),
     };
     
-    public void Pole()
+    public virtual void Pole()
     {
         Console.WriteLine("to nie jest figura konkretna");
     }
@@ -18,24 +18,46 @@ public class Figura
 
 public class Kolo : Figura
 {
-    public void Pole(int radius)
+    private int _radius;
+    public Kolo(int valRadius)
     {
-        Console.WriteLine($"Pole: {3.1415 * (radius * radius)}");
+        _radius = valRadius;
+    }
+    
+    public override void Pole()
+    {
+        Console.WriteLine($"Pole: {3.1415 * (_radius * _radius)}");
     }
 }
 
 public class Trojkat : Figura
 {
-    public void Pole(int strona, int wysokosc)
+    private int _strona;
+    private int _wysokosc;
+    public Trojkat(int valStrona, int valWysokosc)
     {
-        Console.WriteLine($"Pole: {0.5 * strona * wysokosc}");
+        _strona = valStrona;
+        _wysokosc = valWysokosc;
+    }
+    
+    public override void Pole()
+    {
+        Console.WriteLine($"Pole: {0.5 * _strona * _wysokosc}");
     }
 }
 
 public class Prostokat : Figura
 {
-    public void Pole(int strona1, int strona2)
+    private int _strona1;
+    private int _strona2;
+    public Prostokat(int valStrona1, int valStrona2)
     {
-        Console.WriteLine($"Pole: {strona1 * strona2}");
+        _strona1 = valStrona1;
+        _strona2 = valStrona2;
+    }
+    
+    public override void Pole()
+    {
+        Console.WriteLine($"Pole: {_strona1 * _strona2}");
     }
 }
