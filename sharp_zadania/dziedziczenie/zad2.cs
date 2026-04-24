@@ -34,6 +34,11 @@ public class Osoba
 public class Student : Osoba
 {
     private string _nrIndeksu;
+    public string NrIndeksu
+    {
+        get => _nrIndeksu;
+        set => _nrIndeksu = value;
+    }
     
     public Student(string imie, string nazwisko, string pesel, string nrIndeksu)
         : base(imie, nazwisko, pesel)
@@ -45,6 +50,11 @@ public class Student : Osoba
 public class Pracownik : Osoba
 {
     private string _praca;
+    public string Praca
+    {
+        get => _praca;
+        set => _praca = value;
+    }
     
     public Pracownik(string imie, string nazwisko, string pesel, string praca)
         : base(imie, nazwisko, pesel)
