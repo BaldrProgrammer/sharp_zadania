@@ -1,6 +1,6 @@
 namespace sharp_zadania.polimorfism;
 
-public class Zwierz
+class Zwierz
 {
     public virtual void Dzwiek()
     {
@@ -8,7 +8,7 @@ public class Zwierz
     }
 }
 
-public class Kot : Zwierz
+class Kot : Zwierz
 {
     public override void Dzwiek()
     {
@@ -16,7 +16,7 @@ public class Kot : Zwierz
     }
 }
 
-public class Pies : Zwierz
+class Pies : Zwierz
 {
     public override void Dzwiek()
     {

@@ -1,6 +1,25 @@
 namespace sharp_zadania.polimorfism;
 
-public class zad2
+abstract class Ksztalt
 {
-    
+    public abstract void Pole();
 }
+
+
+class Kolo : Ksztalt
+{
+    public override void Pole()
+    {
+        
+    }
+}
+
+
+class Prostokat : Ksztalt
+{
+    public override void Pole()
+    {
+        
+    }
+}
+
