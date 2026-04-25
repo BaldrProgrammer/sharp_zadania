@@ -2,13 +2,6 @@
 
 public class Figura
 {
-    private Figura[] _tablicaWskaznikow = new Figura[]
-    {
-        new Kolo(1), 
-        new Trojkat(1, 1), 
-        new Prostokat(1, 1),
-    };
-    
     public virtual void Pole()
     {
         Console.WriteLine("to nie jest figura konkretna");
