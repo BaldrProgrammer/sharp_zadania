@@ -3,6 +3,7 @@ namespace sharp_zadania.polimorfism;
 abstract class Ksztalt
 {
     public abstract double Pole();
+    public abstract double Obwod();
 }
 
 
@@ -23,6 +24,12 @@ class Kolo : Ksztalt
     {
         return Math.
             PI * _r + _r;
+    }
+    
+    public override double Obwod()
+    {
+        return Math.
+            PI * _r + 2;
     }
 }
 
@@ -45,5 +52,10 @@ class Prostokat : Ksztalt
     public override double Pole()
     {
         return _a * _b;
+    }
+    
+    public override double Obwod()
+    {
+        return (_a + _b) * 2;
     }
 }

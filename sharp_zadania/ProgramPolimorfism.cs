@@ -28,6 +28,7 @@ class ProgramPolimorfism
         foreach (Ksztalt ksztalt in ksztalty)
         {
             Console.WriteLine(ksztalt.Pole());
+            Console.WriteLine(ksztalt.Obwod());
         }
         
     }
