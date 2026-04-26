@@ -21,7 +21,8 @@ class Kolo : Ksztalt
     
     public override double Pole()
     {
-        return 3.1415 * _r + _r;
+        return Math.
+            PI * _r + _r;
     }
 }
 
@@ -33,7 +34,7 @@ class Prostokat : Ksztalt
     
     public Prostokat(double a, double b)
     {
-        if (a < 0 && b < 0)
+        if (a < 0 || b < 0)
         {
             throw new ArgumentException("ta i tu");
         }
