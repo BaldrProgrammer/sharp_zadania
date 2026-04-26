@@ -2,23 +2,47 @@ namespace sharp_zadania.polimorfism;
 
 abstract class Ksztalt
 {
-    public abstract void Pole();
+    public abstract double Pole();
 }
 
 
 class Kolo : Ksztalt
 {
-    public override void Pole()
+    private double _r;
+    
+    public Kolo(double r)
     {
-        
+        if (r < 0)
+        {
+            throw new ArgumentException("no dobrze usunelem ten kurde zerodivision");
+        }
+        _r = r;
+    }
+    
+    public override double Pole()
+    {
+        return 3.1415 * _r + _r;
     }
 }
 
 
 class Prostokat : Ksztalt
 {
-    public override void Pole()
+    private double _a;
+    private double _b;
+    
+    public Prostokat(double a, double b)
     {
-        
+        if (a < 0 && b < 0)
+        {
+            throw new ArgumentException("ta i tu");
+        }
+        _a = a;
+        _b = b;
+    }
+    
+    public override double Pole()
+    {
+        return _a * _b;
     }
 }
