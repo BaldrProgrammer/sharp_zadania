@@ -22,4 +22,3 @@ class Prostokat : Ksztalt
         
     }
 }
-

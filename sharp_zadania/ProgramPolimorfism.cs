@@ -12,5 +12,10 @@ class ProgramPolimorfism
             new Pies()
         };
 
+        foreach (Zwierz zwierz in zwierza)
+        {
+            zwierz.Dzwiek();
+        }
+
     }
 }
