@@ -2,29 +2,40 @@
 
 abstract class Pracownik
 {
-    public abstract double ObliczPlace();
+    private int _zaplata = 5000;
+    public int Zaplata
+    {
+        get => _zaplata;
+        set => _zaplata = value;
+    }
+    
+    public abstract double? ObliczPlace();
 }
 
 class Stazysta : Pracownik
 {
-    public override double ObliczPlace()
+    public override double? ObliczPlace()
     {
-        return  1.5;
+        return Zaplata * 1.2;
     }
 }
 
 class Etatowy : Pracownik
 {
-    public override double ObliczPlace()
+    public override double? ObliczPlace()
     {
-        return  1.5;
+        if (Zaplata >= 4666)
+        {
+            return Zaplata * 0.9;
+        }
+        return null;
     }
 }
 
 class Kontraktowy : Pracownik
 {
-    public override double ObliczPlace()
+    public override double? ObliczPlace()
     {
-        return  1.5;
+        return Zaplata;
     }
 }
