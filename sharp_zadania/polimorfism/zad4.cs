@@ -11,6 +11,11 @@ public class Stos<T>
 
     public T Pop()
     {
+        if (isEmpty() == true)
+        {
+            throw new Exception("stack is empty");
+        }
+        
         int lastIndex = _stack.Count - 1;
         T element = _stack[lastIndex];
         _stack.RemoveAt(lastIndex);
