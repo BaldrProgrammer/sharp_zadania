@@ -46,5 +46,19 @@ class ProgramPolimorfism
             sumaWynagrodzen += pracownik.ObliczPlace() ?? 0;
         }
         Console.WriteLine(sumaWynagrodzen);
+        
+        
+        ////////////////// 444444444444444444444
+        Stos<int> stosInt =  new Stos<int>();
+        stosInt.Push(1);
+        stosInt.Push(2);
+        stosInt.Push(3);
+        stosInt.Pop();
+        
+        Stos<string> stosStr =  new Stos<string>();
+        stosStr.Push("odin");
+        stosStr.Push("dva");
+        stosStr.Push("tri");
+        stosStr.Pop();
     }
 }
