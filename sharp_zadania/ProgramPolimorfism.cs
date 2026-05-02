@@ -31,5 +31,20 @@ class ProgramPolimorfism
             Console.WriteLine(ksztalt.Obwod());
         }
         
+        
+        //////////////////// 33333333333333333333
+        Pracownik[] pracownicy = new Pracownik[]
+        {
+            new Stazysta(),
+            new Etatowy(),
+            new Kontraktowy()
+        };
+        double sumaWynagrodzen = 0;
+
+        foreach (Pracownik pracownik in pracownicy)
+        { 
+            sumaWynagrodzen += pracownik.ObliczPlace() ?? 0;
+        }
+        Console.WriteLine(sumaWynagrodzen);
     }
 }
