@@ -11,8 +11,14 @@ public class Stos<T>
 
     public T Pop()
     {
-        T element = _stack[0];
-        _stack.RemoveAt(0);
+        int lastIndex = _stack.Count - 1;
+        T element = _stack[lastIndex];
+        _stack.RemoveAt(lastIndex);
         return element;
+    }
+    
+    public bool isEmpty()
+    {
+        return _stack.Count == 0;
     }
 }
