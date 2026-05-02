@@ -60,5 +60,18 @@ class ProgramPolimorfism
         stosStr.Push("dva");
         stosStr.Push("tri");
         stosStr.Pop();
+        
+        
+        /////////////////// 555555555555555555
+        IPlatable[] jakiesczeki = new IPlatable[]
+        {
+            new Faktura(),
+            new Paragon()
+        };
+        
+        foreach (IPlatable jakisczek in jakiesczeki)
+        { 
+            jakisczek.Oplac();
+        }
     }
 }
