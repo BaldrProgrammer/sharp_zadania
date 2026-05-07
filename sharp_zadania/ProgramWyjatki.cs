@@ -19,5 +19,9 @@ class ProgramWyjatki
         {
             Console.WriteLine("хуй2");
         }
+        
+        
+        ///////////////////// 22222222222222222222222
+        
     }
 }
