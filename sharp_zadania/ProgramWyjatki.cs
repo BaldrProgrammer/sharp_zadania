@@ -14,5 +14,9 @@ class ProgramWyjatki
         {
             Console.WriteLine("хуй");
         }
+        catch (Exception e)
+        {
+            Console.WriteLine("хуй2");
+        }
     }
 }
