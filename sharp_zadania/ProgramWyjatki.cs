@@ -22,6 +22,30 @@ class ProgramWyjatki
         
         
         ///////////////////// 22222222222222222222222
+        try
+        {
+            int wiek = -5;
+
+            if (wiek < 0) {
+                throw new BladWalidacji("Niepoprawny wiek");
+            }
+
+            int saldo = 0;
+
+            if (saldo == 0) {
+                throw new BladTransakcji("Brak środków");
+            }
+        }
+        catch (BladWalidacji e)
+        {
+            Console.WriteLine("podczas wykonania wystepil bled walidacji");
+            throw;
+        }
+        catch (BladTransakcji e)
+        {
+            Console.WriteLine("podczas wykonania wystepil bled transakcji");
+            throw;
+        }
         
     }
 }
