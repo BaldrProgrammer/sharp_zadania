@@ -6,6 +6,7 @@ class ProgramWyjatki
 {
     public static void Main()
     {
+        //////////////////// 1111111111111111111111
         try
         {
             zad1.Silnia(-45);
