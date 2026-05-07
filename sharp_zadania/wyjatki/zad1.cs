@@ -11,11 +11,11 @@ class BladSilni : Exception
 
 public class zad1
 {
-    public void Silnia(int n)
+    public static void Silnia(int n)
     {
         if (n < 0)
         {
-            throw new Exception("ujemna jest ta n");
+            throw new BladSilni("ujemna jest ta n");
         }
     }
 }
