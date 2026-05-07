@@ -1,4 +1,5 @@
 using sharp_zadania;
 
 // ProgramDziedziczenie.Main();
-ProgramPolimorfism.Main();
+// ProgramPolimorfism.Main();
+ProgramWyjatki.Main();

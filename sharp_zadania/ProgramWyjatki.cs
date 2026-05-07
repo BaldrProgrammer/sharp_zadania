@@ -1,6 +1,9 @@
 namespace sharp_zadania;
 
-public class ProgramWyjatki
+class ProgramWyjatki
 {
-    
+    public static void Main()
+    {
+        
+    }
 }
