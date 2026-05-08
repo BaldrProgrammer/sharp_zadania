@@ -2,7 +2,7 @@
 
 public class zad4
 {
-    public void Main()
+    public zad4()
     {
         try
         {

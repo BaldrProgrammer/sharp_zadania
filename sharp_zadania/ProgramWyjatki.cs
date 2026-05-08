@@ -56,5 +56,8 @@ class ProgramWyjatki
             Console.WriteLine("magia plika niema");
         }
         
+        
+        ////////////////////// 4444444444444444444444
+        zad4 zad_4 =  new zad4();
     }
 }
