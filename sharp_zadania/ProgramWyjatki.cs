@@ -39,16 +39,22 @@ class ProgramWyjatki
         catch (BladWalidacji e)
         {
             Console.WriteLine("podczas wykonania wystepil bled walidacji");
-            throw;
         }
         catch (BladTransakcji e)
         {
             Console.WriteLine("podczas wykonania wystepil bled transakcji");
-            throw;
         }
         
         
         ////////////////////// 3333333333333333333333
+        try
+        {
+            Plik plik = new Plik("C:\\Users\\Programisci\\Desktop\\zain.re");
+        }
+        catch (FileNotFoundException e)
+        {
+            Console.WriteLine("magia plika niema");
+        }
         
     }
 }
