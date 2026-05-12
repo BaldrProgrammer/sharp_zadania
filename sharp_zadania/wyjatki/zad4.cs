@@ -2,6 +2,8 @@
 
 public class zad4
 {
+    /// throw e resetuje ślad stosu (więc błędy będą pochodzić z HandleException)
+    /// throw nie - pierwotny sprawca zostałby zachowany.
     public zad4()
     {
         try
