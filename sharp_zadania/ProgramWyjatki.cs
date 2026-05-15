@@ -57,7 +57,10 @@ class ProgramWyjatki
         }
         
         
-        ////////////////////// 4444444444444444444444
-        zad4 zad_4 =  new zad4();
+        ////////////////////// 5555555555555555555555
+        using (var db = new Zasob("tu.jest.url"))
+        {
+            db.Wykorzystac();
+        }
     }
 }
